@@ -1,0 +1,66 @@
+## Interface: 120100
+## Title: NSRT AutoReminders
+## Notes: Pull raid cooldown timelines from Viserio CD Raid and WoW Timeline straight into Northern Sky Raid Tools. Viserio notes cover the whole raid and can be shared to the group; WoW Timeline notes are personal, per spec.
+## Notes-frFR: Récupère les timelines de cooldowns depuis Viserio CD Raid et WoW Timeline directement dans Northern Sky Raid Tools. Les notes Viserio couvrent tout le raid et peuvent être partagées au groupe ; les notes WoW Timeline sont personnelles, par spécialisation.
+## Author: Abraa
+## Version: 13.0.5
+## Dependencies: NorthernSkyRaidTools
+## OptionalDeps: NorthernSkyRaidTools_UI
+## SavedVariables: NSRTAutoRemindersDB
+## IconTexture: Interface\AddOns\NSRTAutoReminders\Media\icon.tga
+## X-Category: Raid Tools
+
+# Les fichiers de Data\ ne sont PAS listes ici : ils appartiennent a
+# ton dossier et sont ecrits par NSRTAutoReminders-build.py, qui ajoute
+# lui-meme les lignes correspondantes. Les figer dans l'archive les
+# desinscrivait a chaque mise a jour de l'addon.
+
+
+Locales\Index.lua
+Locales\frFR.lua
+Locales\deDE.lua
+Locales\esES.lua
+Locales\esMX.lua
+Locales\itIT.lua
+Locales\ptBR.lua
+Locales\ruRU.lua
+Locales\koKR.lua
+Locales\zhCN.lua
+Locales\zhTW.lua
+Core\Sources.lua
+# BEGIN TOPLOGS DATA
+Data\WowTimeline\Index.lua
+Data\WowTimeline\entombed-sentinels.lua
+Data\WowTimeline\kithix.lua
+Data\WowTimeline\nekzali-the-soulcoiler.lua
+Data\WowTimeline\nymrissa-wavecaller.lua
+Data\WowTimeline\sszorak.lua
+Data\WowTimeline\the-coiled-altar.lua
+Data\WowTimeline\the-lost-explorers.lua
+Data\WowTimeline\the-twin-fangs.lua
+Data\WowTimeline\ulatek.lua
+Data\WowTimeline\vashnik-the-malignant.lua
+Data\WowTimeline\Register.lua
+# END TOPLOGS DATA
+# BEGIN VISERIO DATA
+Data\Viserio\Index.lua
+Data\Viserio\entombed-sentinels.lua
+Data\Viserio\kithix.lua
+Data\Viserio\nekzali-the-soulcoiler.lua
+Data\Viserio\nymrissa-wavecaller.lua
+Data\Viserio\sszorak.lua
+Data\Viserio\the-coiled-altar.lua
+Data\Viserio\the-lost-explorers.lua
+Data\Viserio\the-twin-fangs.lua
+Data\Viserio\ulatek.lua
+Data\Viserio\vashnik-the-malignant.lua
+Data\Viserio\BossTimeline.lua
+Data\Viserio\Register.lua
+# END VISERIO DATA
+Data\Phases.lua
+Data\BossTimelines.lua
+Data\Spells.lua
+Core\Core.lua
+Core\UI.lua
+Core\Integration.lua
+Core\Launcher.lua
