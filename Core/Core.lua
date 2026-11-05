@@ -424,6 +424,7 @@ end
 local knownSpellsCache
 
 local function CollectSpellIDs(seen)
+    local function mark(id) seen[id] = true end
     for _, id in ipairs(EP.SourceOrder) do
         local def = EP.Sources[id]
         if def then
@@ -431,9 +432,7 @@ local function CollectSpellIDs(seen)
                 for _, bySpec in pairs(byDiff) do
                     for _, variants in pairs(bySpec) do
                         for _, variant in ipairs(variants) do
-                            for _, r in ipairs(variant.reminders or {}) do
-                                if r.spellid then seen[r.spellid] = true end
-                            end
+                            EP.ForEachVariantSpell(variant, mark)
                         end
                     end
                 end

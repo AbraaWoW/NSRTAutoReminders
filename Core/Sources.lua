@@ -47,11 +47,63 @@ EP.PlanNamePrefix = "[AR] "
 EP.Sources = {}
 EP.SourceOrder = {}
 
+local function DecodeReminders(s)
+    local out = {}
+    for t, ph, id in s:gmatch("([^,;]+),([^,;]+),([^,;]+)") do
+        out[#out + 1] = { time = tonumber(t), ph = tonumber(ph), spellid = tonumber(id) }
+    end
+    return out
+end
+
+local LazyVariant = {
+    __index = function(variant, key)
+        if key ~= "reminders" then return nil end
+        local packed = rawget(variant, "r")
+        if type(packed) ~= "string" then return nil end
+        local list = DecodeReminders(packed)
+        rawset(variant, "reminders", list)
+        rawset(variant, "r", nil)
+        return list
+    end,
+}
+
+local function AttachLazyReminders(plans)
+    for _, byDiff in pairs(plans) do
+        for _, bySpec in pairs(byDiff) do
+            for _, variants in pairs(bySpec) do
+                for _, variant in ipairs(variants) do
+                    if type(rawget(variant, "r")) == "string" then
+                        setmetatable(variant, LazyVariant)
+                    end
+                end
+            end
+        end
+    end
+end
+
+function EP.ForEachVariantSpell(variant, fn)
+    local list = rawget(variant, "reminders")
+    if list then
+        for _, r in ipairs(list) do
+            if r.spellid then fn(r.spellid) end
+        end
+        return
+    end
+    local packed = rawget(variant, "r")
+    if type(packed) == "string" then
+        for id in packed:gmatch("[^,;]+,[^,;]+,([^,;]+)") do
+            id = tonumber(id)
+            if id then fn(id) end
+        end
+    end
+end
+
 function EP.RegisterSource(def)
     if not (def and def.id) or EP.Sources[def.id] then return end
     def.Raid = def.Raid or {}
     def.EncounterNames = def.EncounterNames or {}
     def.Plans = def.Plans or {}
+    AttachLazyReminders(def.Plans)
     def.FullNotes = def.FullNotes or {}
     def.fullRaid = def.fullRaid or false
     EP.Sources[def.id] = def

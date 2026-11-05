@@ -60,7 +60,7 @@ except ImportError:
 
 import builtins
 
-SCRIPT_VERSION = "5.9.0"
+SCRIPT_VERSION = "5.10.0"
 
 
 def console_text(value):
@@ -2542,17 +2542,15 @@ def _write_toplogs_boss_file(data_root, enc_id, plans, encounter_names):
                         f"[{format_lua_phase(p)}] = {int(v)}"
                         for p, v in sorted(starts.items()))
                     lines.append(f"                phaseStarts = {{ {pairs} }},")
-                lines.append("                reminders = {")
+                packed = []
                 for cast in variant["casts"]:
                     seconds, spell, phase = cast[0], cast[1], cast[2]
                     # spellID 0 : aucun sort reel (NSRT n'afficherait rien).
                     if not spell or int(spell) <= 0:
                         continue
-                    lines.append(
-                        f"                    {{ time = {seconds}, "
-                        f"ph = {format_lua_phase(phase)}, "
-                        f"spellid = {spell} }},")
-                lines.append("                },")
+                    packed.append(
+                        f"{seconds},{format_lua_phase(phase)},{int(spell)}")
+                lines.append(f'                r = "{";".join(packed)}",')
                 lines.append("            },")
             lines.append("        },")
         lines.append("    },")
