@@ -3,7 +3,7 @@ EP.RegisterSource({
     id = "viserio",
     label = "Viserio CD Raid",
     GeneratedAt = "2026-11-05",
-    CurrentSeason = 1,
+    CurrentSeason = 2,
     Raid = EP.ViserioRaid,
     EncounterNames = EP.ViserioEncounterNames,
     Plans = {},
