@@ -49,3 +49,4 @@ __pycache__/
 
 # Zips fabriqués en local
 releases/
+actions-runner/
