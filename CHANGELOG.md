@@ -2,6 +2,7 @@
 
 ## v13.0.9
 
+- Data update (WoW Timeline and Viserio) - 2026-11-05 12:55 UTC
 - Memory usage reduced about fivefold: WoW Timeline plans are now decoded only when opened.
 
 ## v13.0.8 (2026-11-05)
