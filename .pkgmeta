@@ -1,0 +1,24 @@
+package-as: NSRTAutoReminders
+
+enable-nolib-creation: no
+
+# Ce qui ne doit pas finir dans le zip publie.
+ignore:
+  - .github
+  - .venv
+  - tools
+  - docs
+  - README.md
+  - "*.py"
+  - .env
+  - releases
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+# SEULEMENT si l'addon est dans un sous-dossier du depot
+# (NSRTAutoReminders/NSRTAutoReminders.toc) : retire le « # » des deux
+# lignes suivantes.
+# move-folders:
+#   NSRTAutoReminders/NSRTAutoReminders: NSRTAutoReminders

@@ -1,0 +1,116 @@
+name: Release
+
+# Publie l'addon sur CurseForge (et la page Releases de GitHub).
+# Lancement : Actions -> Release -> Run workflow.
+#
+# Tout tourne sur TA VM (runner auto-heberge, etiquette « nsrt ») :
+#   1. regeneration des donnees avec le script de build (optionnel) ;
+#   2. lecture de la version dans le .toc (le build l'a deja augmentee) ;
+#   3. section du CHANGELOG.md pour cette version (creee si absente) ;
+#   4. commit des donnees + tag vX.Y.Z, pousses sur GitHub ;
+#   5. zip et envoi sur CurseForge par le BigWigs packager.
+#
+# Les cles Warcraft Logs restent sur la VM (BUILD_ENV), jamais sur GitHub.
+# Seul CF_API_KEY est un secret GitHub.
+
+on:
+  workflow_dispatch:
+    inputs:
+      build:
+        description: "Regenerer les donnees avant de publier"
+        type: boolean
+        default: true
+      notes:
+        description: "Nouveautes, si CHANGELOG.md n'a pas encore de section pour cette version"
+        required: false
+        default: "Mise a jour des donnees (WoW Timeline et Viserio)."
+
+permissions:
+  contents: write
+
+concurrency: release
+
+jobs:
+  release:
+    runs-on: [self-hosted, linux, nsrt]
+    env:
+      ADDON: NSRTAutoReminders
+      BUILD_ENV: /opt/wow/secrets/build.env
+      VENV: /opt/wow/venv-build
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Dossier de l'addon
+        run: |
+          if [ -f "$ADDON.toc" ]; then dir="$PWD"
+          elif [ -f "$ADDON/$ADDON.toc" ]; then dir="$PWD/$ADDON"
+          else echo "::error::$ADDON.toc introuvable dans le depot"; exit 1; fi
+          echo "ADDON_DIR=$dir" >> "$GITHUB_ENV"
+          echo "Addon : $dir"
+
+      - name: Python du build
+        if: inputs.build
+        run: |
+          [ -x "$VENV/bin/python" ] || python3 -m venv "$VENV"
+          "$VENV/bin/pip" install --quiet --upgrade requests
+
+      - name: Regenerer les donnees
+        if: inputs.build
+        run: |
+          script=$(git ls-files | grep -m1 'NSRTAutoReminders-build\.py$' || true)
+          [ -n "$script" ] || { echo "::error::NSRTAutoReminders-build.py absent du depot"; exit 1; }
+          [ -f "$BUILD_ENV" ] || { echo "::error::$BUILD_ENV absent de la VM (cles Warcraft Logs)"; exit 1; }
+          "$VENV/bin/python" "$script" --addon-dir "$ADDON_DIR" --env-file "$BUILD_ENV"
+
+      - name: Version
+        run: |
+          v=$(grep -m1 '^## Version:' "$ADDON_DIR/$ADDON.toc" | sed 's/^## Version:[[:space:]]*//' | tr -d '\r')
+          [[ "$v" =~ ^[0-9]+(\.[0-9]+)+$ ]] || { echo "::error::Version illisible dans le .toc : '$v'"; exit 1; }
+          if git rev-parse -q --verify "refs/tags/v$v" >/dev/null; then
+            echo "::error::La version v$v est deja publiee. Augmente '## Version:' dans le .toc (ou coche « Regenerer les donnees »)."
+            exit 1
+          fi
+          echo "VERSION=v$v" >> "$GITHUB_ENV"
+          echo "Version : v$v"
+
+      - name: CHANGELOG
+        env:
+          NOTES: ${{ inputs.notes }}
+        run: |
+          [ -f CHANGELOG.md ] || printf '# Changelog\n' > CHANGELOG.md
+          if ! grep -q "^## $VERSION\b" CHANGELOG.md; then
+            {
+              sed -n '1p' CHANGELOG.md
+              printf '\n## %s (%s)\n\n- %s\n' "$VERSION" "$(date +%F)" "$NOTES"
+              sed '1d' CHANGELOG.md
+            } > "$RUNNER_TEMP/cl.md"
+            mv "$RUNNER_TEMP/cl.md" CHANGELOG.md
+          fi
+          awk -v v="$VERSION" '/^## / { if (found) exit; found = ($2 == v) } found' CHANGELOG.md > "$RUNNER_TEMP/notes.md"
+          cat "$RUNNER_TEMP/notes.md"
+
+      - name: Commit et tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Release $VERSION" || echo "Rien a enregistrer"
+          git tag "$VERSION"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+          git push origin "refs/tags/$VERSION"
+
+      # Le packager joint CHANGELOG.md comme notes de version : on ne lui
+      # laisse que la section de cette version (modification non commitee).
+      - name: Notes de cette version seulement
+        run: cp "$RUNNER_TEMP/notes.md" CHANGELOG.md
+
+      # Envoi ignore pour un site sans identifiant dans le .toc
+      # (X-Curse-Project-ID, X-Wago-ID) ou sans son secret.
+      - name: Zip et envoi
+        uses: BigWigsMods/packager@v2
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
+          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}

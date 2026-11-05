@@ -4,7 +4,7 @@ EP.ViserioFullNotes = EP.ViserioFullNotes or {}
 EP.ViserioFullNotes[3497] = {
     {
         name = "M Explorers Viserio Template",
-        author = "Rasmus",
+        author = "Supporter Template",
         difficulty = "Mythic",
         duration = 413,
         phaseStarts = { [1] = 0, [2] = 64, [3] = 183, [4] = 306 },
@@ -874,71 +874,6 @@ EP.ViserioFullNotes[3497] = {
         },
     },
     {
-        name = "The Lost Explorers cooldowns",
-        author = "nnnnn",
-        difficulty = "Mythic",
-        duration = 426,
-        phaseStarts = { [1] = 0, [2] = 64, [3] = 183, [4] = 306 },
-        composition = { 65, 65, 71, 252, 257, 264, 1468 },
-        specs = {
-            [65] = {
-                {
-                    { time = 171, ph = 1, spellid = 31821 },
-                    { time = 382, ph = 1, spellid = 31821 },
-                },
-                {
-                    { time = 16, ph = 1, spellid = 31821 },
-                    { time = 210, ph = 1, spellid = 31821 },
-                    { time = 413, ph = 1, spellid = 31821 },
-                },
-            },
-            [71] = {
-                {
-                    { time = 75, ph = 1, spellid = 97462 },
-                    { time = 289, ph = 1, spellid = 97462 },
-                },
-            },
-            [252] = {
-                {
-                    { time = 47, ph = 1, spellid = 51052 },
-                    { time = 258, ph = 1, spellid = 51052 },
-                },
-            },
-            [257] = {
-                {
-                    { time = 30, ph = 1, spellid = 64843 },
-                    { time = 32, ph = 1, spellid = 200183 },
-                    { time = 175, ph = 1, spellid = 64843 },
-                    { time = 185, ph = 1, spellid = 200183 },
-                    { time = 297, ph = 1, spellid = 64843 },
-                    { time = 306, ph = 1, spellid = 200183 },
-                    { time = 418, ph = 1, spellid = 64843 },
-                    { time = 426, ph = 1, spellid = 200183 },
-                },
-            },
-            [264] = {
-                {
-                    { time = 30, ph = 1, spellid = 114052 },
-                    { time = 108, ph = 1, spellid = 98008 },
-                    { time = 210, ph = 1, spellid = 114052 },
-                    { time = 290, ph = 1, spellid = 98008 },
-                    { time = 390, ph = 1, spellid = 114052 },
-                },
-            },
-            [1468] = {
-                {
-                    { time = 16, ph = 1, spellid = 374227 },
-                    { time = 50, ph = 1, spellid = 363534 },
-                    { time = 139, ph = 1, spellid = 374227 },
-                    { time = 233, ph = 1, spellid = 363534 },
-                    { time = 259, ph = 1, spellid = 374227 },
-                    { time = 382, ph = 1, spellid = 374227 },
-                    { time = 414, ph = 1, spellid = 363534 },
-                },
-            },
-        },
-    },
-    {
         name = "The Lost Explorers - Mythic - Lejf",
         author = "lejf",
         difficulty = "Mythic",
@@ -1133,6 +1068,71 @@ EP.ViserioFullNotes[3497] = {
                 {
                     { time = 64, ph = 1, spellid = 196718 },
                     { time = 304, ph = 1, spellid = 196718 },
+                },
+            },
+        },
+    },
+    {
+        name = "The Lost Explorers cooldowns",
+        author = "nnnnn",
+        difficulty = "Mythic",
+        duration = 426,
+        phaseStarts = { [1] = 0, [2] = 64, [3] = 183, [4] = 306 },
+        composition = { 65, 65, 71, 252, 257, 264, 1468 },
+        specs = {
+            [65] = {
+                {
+                    { time = 171, ph = 1, spellid = 31821 },
+                    { time = 382, ph = 1, spellid = 31821 },
+                },
+                {
+                    { time = 16, ph = 1, spellid = 31821 },
+                    { time = 210, ph = 1, spellid = 31821 },
+                    { time = 413, ph = 1, spellid = 31821 },
+                },
+            },
+            [71] = {
+                {
+                    { time = 75, ph = 1, spellid = 97462 },
+                    { time = 289, ph = 1, spellid = 97462 },
+                },
+            },
+            [252] = {
+                {
+                    { time = 47, ph = 1, spellid = 51052 },
+                    { time = 258, ph = 1, spellid = 51052 },
+                },
+            },
+            [257] = {
+                {
+                    { time = 30, ph = 1, spellid = 64843 },
+                    { time = 32, ph = 1, spellid = 200183 },
+                    { time = 175, ph = 1, spellid = 64843 },
+                    { time = 185, ph = 1, spellid = 200183 },
+                    { time = 297, ph = 1, spellid = 64843 },
+                    { time = 306, ph = 1, spellid = 200183 },
+                    { time = 418, ph = 1, spellid = 64843 },
+                    { time = 426, ph = 1, spellid = 200183 },
+                },
+            },
+            [264] = {
+                {
+                    { time = 30, ph = 1, spellid = 114052 },
+                    { time = 108, ph = 1, spellid = 98008 },
+                    { time = 210, ph = 1, spellid = 114052 },
+                    { time = 290, ph = 1, spellid = 98008 },
+                    { time = 390, ph = 1, spellid = 114052 },
+                },
+            },
+            [1468] = {
+                {
+                    { time = 16, ph = 1, spellid = 374227 },
+                    { time = 50, ph = 1, spellid = 363534 },
+                    { time = 139, ph = 1, spellid = 374227 },
+                    { time = 233, ph = 1, spellid = 363534 },
+                    { time = 259, ph = 1, spellid = 374227 },
+                    { time = 382, ph = 1, spellid = 374227 },
+                    { time = 414, ph = 1, spellid = 363534 },
                 },
             },
         },

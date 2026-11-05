@@ -39,5 +39,13 @@ luac.out
 *.x86_64
 *.hex
 
+
+# Python du build et secrets : jamais sur GitHub
 .venv/
-.venv/
+.env
+*.env
+__pycache__/
+.cache*
+
+# Zips fabriqués en local
+releases/

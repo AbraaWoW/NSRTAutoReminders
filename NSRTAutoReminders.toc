@@ -3,12 +3,13 @@
 ## Notes: Pull raid cooldown timelines from Viserio CD Raid and WoW Timeline straight into Northern Sky Raid Tools. Viserio notes cover the whole raid and can be shared to the group; WoW Timeline notes are personal, per spec.
 ## Notes-frFR: Récupère les timelines de cooldowns depuis Viserio CD Raid et WoW Timeline directement dans Northern Sky Raid Tools. Les notes Viserio couvrent tout le raid et peuvent être partagées au groupe ; les notes WoW Timeline sont personnelles, par spécialisation.
 ## Author: Abraa
-## Version: 13.0.5
+## Version: 13.0.6
 ## Dependencies: NorthernSkyRaidTools
 ## OptionalDeps: NorthernSkyRaidTools_UI
 ## SavedVariables: NSRTAutoRemindersDB
 ## IconTexture: Interface\AddOns\NSRTAutoReminders\Media\icon.tga
 ## X-Category: Raid Tools
+## X-Curse-Project-ID: 1618475
 
 # Les fichiers de Data\ ne sont PAS listes ici : ils appartiennent a
 # ton dossier et sont ecrits par NSRTAutoReminders-build.py, qui ajoute

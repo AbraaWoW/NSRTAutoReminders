@@ -4,7 +4,7 @@ EP.ViserioFullNotes = EP.ViserioFullNotes or {}
 EP.ViserioFullNotes[3513] = {
     {
         name = "M Kith'ix Viserio Template",
-        author = "Rasmus",
+        author = "Supporter Template",
         difficulty = "Mythic",
         duration = 345,
         phaseStarts = { [1] = 0, [2] = 265 },
@@ -209,7 +209,7 @@ EP.ViserioFullNotes[3513] = {
     },
     {
         name = "Kith'ix Mythic - rough draft",
-        author = "Pootatoes",
+        author = "Gossana",
         difficulty = "Mythic",
         duration = 302,
         phaseStarts = { [1] = 0, [2] = 300 },
@@ -413,8 +413,9 @@ EP.ViserioFullNotes[3513] = {
             [257] = {
                 {
                     { time = 0, ph = 1, spellid = 200183 },
-                    { time = 17, ph = 1, spellid = 64843 },
+                    { time = 84, ph = 1, spellid = 64843 },
                     { time = 123, ph = 1, spellid = 200183 },
+                    { time = 233, ph = 1, spellid = 64843 },
                     { time = 260, ph = 1, spellid = 200183 },
                 },
             },
@@ -441,25 +442,6 @@ EP.ViserioFullNotes[3513] = {
                     { time = 124, ph = 1, spellid = 363534 },
                     { time = 127, ph = 1, spellid = 370537 },
                     { time = 233, ph = 1, spellid = 370537 },
-                },
-            },
-        },
-    },
-    {
-        name = "Kith'ix cooldowns",
-        author = "Navidnsr",
-        difficulty = "Mythic",
-        duration = 344,
-        phaseStarts = { [1] = 0, [2] = 300 },
-        composition = { 65 },
-        specs = {
-            [65] = {
-                {
-                    { time = 5, ph = 1, spellid = 31884 },
-                    { time = 126, ph = 1, spellid = 31884 },
-                    { time = 129, ph = 1, spellid = 31821 },
-                    { time = 252, ph = 1, spellid = 31884 },
-                    { time = 344, ph = 1, spellid = 31821 },
                 },
             },
         },
@@ -528,6 +510,25 @@ EP.ViserioFullNotes[3513] = {
                     { time = 255, ph = 1, spellid = 370564 },
                     { time = 266, ph = 1, spellid = 370537 },
                     { time = 283, ph = 1, spellid = 363534 },
+                },
+            },
+        },
+    },
+    {
+        name = "Kith'ix cooldowns",
+        author = "Navidnsr",
+        difficulty = "Mythic",
+        duration = 344,
+        phaseStarts = { [1] = 0, [2] = 300 },
+        composition = { 65 },
+        specs = {
+            [65] = {
+                {
+                    { time = 5, ph = 1, spellid = 31884 },
+                    { time = 126, ph = 1, spellid = 31884 },
+                    { time = 129, ph = 1, spellid = 31821 },
+                    { time = 252, ph = 1, spellid = 31884 },
+                    { time = 344, ph = 1, spellid = 31821 },
                 },
             },
         },
@@ -620,26 +621,6 @@ EP.ViserioFullNotes[3513] = {
         },
     },
     {
-        name = "Kith'ix cooldowns",
-        author = "ZugZug",
-        difficulty = "Heroic",
-        duration = 258,
-        phaseStarts = { [1] = 0, [2] = 210 },
-        composition = { 257 },
-        specs = {
-            [257] = {
-                {
-                    { time = 14, ph = 1, spellid = 64843 },
-                    { time = 28, ph = 1, spellid = 1295132 },
-                    { time = 31, ph = 1, spellid = 200183 },
-                    { time = 160, ph = 1, spellid = 200183 },
-                    { time = 210, ph = 1, spellid = 64843 },
-                    { time = 258, ph = 1, spellid = 200183 },
-                },
-            },
-        },
-    },
-    {
         name = "Kith'ix Heroic (Template)",
         author = "Vesa",
         difficulty = "Heroic",
@@ -701,6 +682,26 @@ EP.ViserioFullNotes[3513] = {
                     { time = 161, ph = 1, spellid = 374227 },
                     { time = 214, ph = 1, spellid = 370537 },
                     { time = 286, ph = 1, spellid = 374227 },
+                },
+            },
+        },
+    },
+    {
+        name = "Kith'ix cooldowns",
+        author = "ZugZug",
+        difficulty = "Heroic",
+        duration = 258,
+        phaseStarts = { [1] = 0, [2] = 210 },
+        composition = { 257 },
+        specs = {
+            [257] = {
+                {
+                    { time = 14, ph = 1, spellid = 64843 },
+                    { time = 28, ph = 1, spellid = 1295132 },
+                    { time = 31, ph = 1, spellid = 200183 },
+                    { time = 160, ph = 1, spellid = 200183 },
+                    { time = 210, ph = 1, spellid = 64843 },
+                    { time = 258, ph = 1, spellid = 200183 },
                 },
             },
         },

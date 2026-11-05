@@ -18,7 +18,7 @@ EP.SpellTable = {
     [5217] = { cd = 30, dur = 6 },  -- Tiger's Fury
     [5277] = { cd = 120, dur = 10 },  -- Evasion
     [5938] = { cd = 25 },  -- Shiv
-    [6940] = { cd = 120, dur = 12 },  -- Blessing of Sacrifice
+    [6940] = { cd = 120 },  -- Blessing of Sacrifice
     [10060] = { cd = 120, dur = 20 },  -- Power Infusion
     [11426] = { cd = 25 },  -- Ice Barrier
     [12051] = { cd = 90, dur = 6 },  -- Evocation

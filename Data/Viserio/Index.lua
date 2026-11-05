@@ -2,9 +2,9 @@
 -- Source : Viserio CD Raid
 local ADDON_NAME, EP = ...
 EP.ViserioRaid = {
-    { name = "The Venomous Abyss", season = 2, current = true, encounters = { 3470, 3445, 3497, 3455, 3420, 3421, 3429, 3492 } },
-    { name = "The Tidebound Grotto", season = 2, current = true, encounters = { 3379 } },
-    { name = "The Unbinding of Kith'ix", season = 2, current = true, encounters = { 3513 } },
+    { name = "The Venomous Abyss", season = 2, current = false, encounters = { 3470, 3445, 3497, 3455, 3420, 3421, 3429, 3492 } },
+    { name = "The Unbinding of Kith'ix", season = 2, current = false, encounters = { 3513 } },
+    { name = "The Tidebound Grotto", season = 2, current = false, encounters = { 3379 } },
 }
 EP.ViserioEncounterNames = {
     [3379] = "Nymrissa Wavecaller",
