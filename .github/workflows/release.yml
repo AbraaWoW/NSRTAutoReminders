@@ -23,7 +23,7 @@ on:
       notes:
         description: "Nouveautes, si CHANGELOG.md n'a pas encore de section pour cette version"
         required: false
-        default: "Mise a jour des donnees (WoW Timeline et Viserio)."
+        default: "Data update (WoW Timeline and Viserio)."
 
 permissions:
   contents: write
