@@ -86,14 +86,28 @@ jobs:
       - name: CHANGELOG
         env:
           NOTES: ${{ inputs.notes }}
+          DATA_UPDATE: ${{ inputs.build }}
         run: |
           [ -f CHANGELOG.md ] || printf '# Changelog\n' > CHANGELOG.md
+          # Chaque mise a jour des donnees porte sa date et son heure (UTC),
+          # meme si la section de cette version existe deja.
+          line=$NOTES
+          if [ "$DATA_UPDATE" = "true" ]; then
+            line="${NOTES%.} - $(date -u '+%F %H:%M UTC')"
+          fi
           if ! grep -q "^## $VERSION\b" CHANGELOG.md; then
             {
               sed -n '1p' CHANGELOG.md
-              printf '\n## %s (%s)\n\n- %s\n' "$VERSION" "$(date +%F)" "$NOTES"
+              printf '\n## %s (%s)\n\n- %s\n' "$VERSION" "$(date +%F)" "$line"
               sed '1d' CHANGELOG.md
             } > "$RUNNER_TEMP/cl.md"
+            mv "$RUNNER_TEMP/cl.md" CHANGELOG.md
+          elif [ "$DATA_UPDATE" = "true" ]; then
+            awk -v v="$VERSION" -v l="- $line" '
+              skip { skip = 0; if ($0 == "") next }
+              { print }
+              /^## / && $2 == v { print ""; print l; skip = 1 }
+            ' CHANGELOG.md > "$RUNNER_TEMP/cl.md"
             mv "$RUNNER_TEMP/cl.md" CHANGELOG.md
           fi
           awk -v v="$VERSION" '/^## / { if (found) exit; found = ($2 == v) } found' CHANGELOG.md > "$RUNNER_TEMP/notes.md"
