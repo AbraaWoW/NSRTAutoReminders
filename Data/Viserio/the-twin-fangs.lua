@@ -505,6 +505,127 @@ EP.ViserioFullNotes[3421] = {
         },
     },
     {
+        name = "WIP TheMechanixx",
+        author = "TheMechanixx",
+        difficulty = "Mythic",
+        duration = 431,
+        composition = { 65, 71, 102, 105, 250, 250, 252, 257, 257, 264, 577, 1467, 1468 },
+        specs = {
+            [65] = {
+                {
+                    { time = 19, ph = 1, spellid = 31821 },
+                    { time = 34, ph = 1, spellid = 31884 },
+                    { time = 200, ph = 1, spellid = 31884 },
+                    { time = 215, ph = 1, spellid = 31821 },
+                    { time = 346, ph = 1, spellid = 31884 },
+                    { time = 416, ph = 1, spellid = 31821 },
+                },
+            },
+            [71] = {
+                {
+                    { time = 100, ph = 1, spellid = 97462 },
+                    { time = 347, ph = 1, spellid = 97462 },
+                },
+            },
+            [102] = {
+                {
+                    { time = 31, ph = 1, spellid = 29166 },
+                    { time = 137, ph = 1, spellid = 106898 },
+                    { time = 215, ph = 1, spellid = 29166 },
+                    { time = 291, ph = 1, spellid = 106898 },
+                    { time = 395, ph = 1, spellid = 29166 },
+                },
+            },
+            [105] = {
+                {
+                    { time = 4, ph = 1, spellid = 391528 },
+                    { time = 16, ph = 1, spellid = 740 },
+                    { time = 66, ph = 1, spellid = 391528 },
+                    { time = 127, ph = 1, spellid = 391528 },
+                    { time = 137, ph = 1, spellid = 106898 },
+                    { time = 194, ph = 1, spellid = 391528 },
+                    { time = 207, ph = 1, spellid = 740 },
+                    { time = 254, ph = 1, spellid = 391528 },
+                    { time = 291, ph = 1, spellid = 106898 },
+                    { time = 346, ph = 1, spellid = 391528 },
+                    { time = 409, ph = 1, spellid = 391528 },
+                },
+            },
+            [250] = {
+                {
+                    { time = 59, ph = 1, spellid = 51052 },
+                    { time = 276, ph = 1, spellid = 51052 },
+                },
+                {
+                    { time = 120, ph = 1, spellid = 51052 },
+                    { time = 370, ph = 1, spellid = 51052 },
+                },
+            },
+            [252] = {
+                {
+                    { time = 213, ph = 1, spellid = 51052 },
+                    { time = 431, ph = 1, spellid = 51052 },
+                },
+            },
+            [257] = {
+                {
+                    { time = 35, ph = 1, spellid = 200183 },
+                    { time = 97, ph = 1, spellid = 64843 },
+                    { time = 192, ph = 1, spellid = 200183 },
+                    { time = 251, ph = 1, spellid = 64843 },
+                    { time = 345, ph = 1, spellid = 200183 },
+                    { time = 378, ph = 1, spellid = 64843 },
+                },
+                {
+                    { time = 36, ph = 1, spellid = 64843 },
+                    { time = 97, ph = 1, spellid = 200183 },
+                    { time = 191, ph = 1, spellid = 64843 },
+                    { time = 252, ph = 1, spellid = 200183 },
+                    { time = 346, ph = 1, spellid = 64843 },
+                    { time = 372, ph = 1, spellid = 200183 },
+                },
+            },
+            [264] = {
+                {
+                    { time = 36, ph = 1, spellid = 114052 },
+                    { time = 121, ph = 1, spellid = 98008 },
+                    { time = 134, ph = 1, spellid = 192077 },
+                    { time = 216, ph = 1, spellid = 114052 },
+                    { time = 289, ph = 1, spellid = 192077 },
+                    { time = 370, ph = 1, spellid = 98008 },
+                    { time = 396, ph = 1, spellid = 114052 },
+                },
+            },
+            [577] = {
+                {
+                    { time = 214, ph = 1, spellid = 196718 },
+                },
+            },
+            [1467] = {
+                {
+                    { time = 121, ph = 1, spellid = 374227 },
+                    { time = 370, ph = 1, spellid = 374227 },
+                },
+            },
+            [1468] = {
+                {
+                    { time = 4, ph = 1, spellid = 370537 },
+                    { time = 59, ph = 1, spellid = 374227 },
+                    { time = 100, ph = 1, spellid = 370537 },
+                    { time = 112, ph = 1, spellid = 363534 },
+                    { time = 134, ph = 1, spellid = 374968 },
+                    { time = 196, ph = 1, spellid = 370537 },
+                    { time = 276, ph = 1, spellid = 374227 },
+                    { time = 289, ph = 1, spellid = 374968 },
+                    { time = 293, ph = 1, spellid = 370537 },
+                    { time = 359, ph = 1, spellid = 363534 },
+                    { time = 384, ph = 1, spellid = 370537 },
+                    { time = 403, ph = 1, spellid = 374227 },
+                },
+            },
+        },
+    },
+    {
         name = "Priest,Sham,Druid,Evoker",
         author = "Domosh",
         difficulty = "Mythic",
@@ -721,127 +842,6 @@ EP.ViserioFullNotes[3421] = {
             [1480] = {
                 {
                     { time = 447, ph = 1, spellid = 196718 },
-                },
-            },
-        },
-    },
-    {
-        name = "WIP TheMechanixx",
-        author = "TheMechanixx",
-        difficulty = "Mythic",
-        duration = 431,
-        composition = { 65, 71, 102, 105, 250, 250, 252, 257, 257, 264, 577, 1467, 1468 },
-        specs = {
-            [65] = {
-                {
-                    { time = 19, ph = 1, spellid = 31821 },
-                    { time = 34, ph = 1, spellid = 31884 },
-                    { time = 200, ph = 1, spellid = 31884 },
-                    { time = 215, ph = 1, spellid = 31821 },
-                    { time = 346, ph = 1, spellid = 31884 },
-                    { time = 416, ph = 1, spellid = 31821 },
-                },
-            },
-            [71] = {
-                {
-                    { time = 100, ph = 1, spellid = 97462 },
-                    { time = 347, ph = 1, spellid = 97462 },
-                },
-            },
-            [102] = {
-                {
-                    { time = 31, ph = 1, spellid = 29166 },
-                    { time = 137, ph = 1, spellid = 106898 },
-                    { time = 215, ph = 1, spellid = 29166 },
-                    { time = 291, ph = 1, spellid = 106898 },
-                    { time = 395, ph = 1, spellid = 29166 },
-                },
-            },
-            [105] = {
-                {
-                    { time = 4, ph = 1, spellid = 391528 },
-                    { time = 16, ph = 1, spellid = 740 },
-                    { time = 66, ph = 1, spellid = 391528 },
-                    { time = 127, ph = 1, spellid = 391528 },
-                    { time = 137, ph = 1, spellid = 106898 },
-                    { time = 194, ph = 1, spellid = 391528 },
-                    { time = 207, ph = 1, spellid = 740 },
-                    { time = 254, ph = 1, spellid = 391528 },
-                    { time = 291, ph = 1, spellid = 106898 },
-                    { time = 346, ph = 1, spellid = 391528 },
-                    { time = 409, ph = 1, spellid = 391528 },
-                },
-            },
-            [250] = {
-                {
-                    { time = 59, ph = 1, spellid = 51052 },
-                    { time = 276, ph = 1, spellid = 51052 },
-                },
-                {
-                    { time = 120, ph = 1, spellid = 51052 },
-                    { time = 370, ph = 1, spellid = 51052 },
-                },
-            },
-            [252] = {
-                {
-                    { time = 213, ph = 1, spellid = 51052 },
-                    { time = 431, ph = 1, spellid = 51052 },
-                },
-            },
-            [257] = {
-                {
-                    { time = 35, ph = 1, spellid = 200183 },
-                    { time = 97, ph = 1, spellid = 64843 },
-                    { time = 192, ph = 1, spellid = 200183 },
-                    { time = 251, ph = 1, spellid = 64843 },
-                    { time = 345, ph = 1, spellid = 200183 },
-                    { time = 378, ph = 1, spellid = 64843 },
-                },
-                {
-                    { time = 36, ph = 1, spellid = 64843 },
-                    { time = 97, ph = 1, spellid = 200183 },
-                    { time = 191, ph = 1, spellid = 64843 },
-                    { time = 252, ph = 1, spellid = 200183 },
-                    { time = 346, ph = 1, spellid = 64843 },
-                    { time = 372, ph = 1, spellid = 200183 },
-                },
-            },
-            [264] = {
-                {
-                    { time = 36, ph = 1, spellid = 114052 },
-                    { time = 121, ph = 1, spellid = 98008 },
-                    { time = 134, ph = 1, spellid = 192077 },
-                    { time = 216, ph = 1, spellid = 114052 },
-                    { time = 289, ph = 1, spellid = 192077 },
-                    { time = 370, ph = 1, spellid = 98008 },
-                    { time = 396, ph = 1, spellid = 114052 },
-                },
-            },
-            [577] = {
-                {
-                    { time = 214, ph = 1, spellid = 196718 },
-                },
-            },
-            [1467] = {
-                {
-                    { time = 121, ph = 1, spellid = 374227 },
-                    { time = 370, ph = 1, spellid = 374227 },
-                },
-            },
-            [1468] = {
-                {
-                    { time = 4, ph = 1, spellid = 370537 },
-                    { time = 59, ph = 1, spellid = 374227 },
-                    { time = 100, ph = 1, spellid = 370537 },
-                    { time = 112, ph = 1, spellid = 363534 },
-                    { time = 134, ph = 1, spellid = 374968 },
-                    { time = 196, ph = 1, spellid = 370537 },
-                    { time = 276, ph = 1, spellid = 374227 },
-                    { time = 289, ph = 1, spellid = 374968 },
-                    { time = 293, ph = 1, spellid = 370537 },
-                    { time = 359, ph = 1, spellid = 363534 },
-                    { time = 384, ph = 1, spellid = 370537 },
-                    { time = 403, ph = 1, spellid = 374227 },
                 },
             },
         },
