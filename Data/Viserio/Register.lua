@@ -2,7 +2,7 @@ local ADDON_NAME, EP = ...
 EP.RegisterSource({
     id = "viserio",
     label = "Viserio CD Raid",
-    GeneratedAt = "2026-11-14",
+    GeneratedAt = "2026-11-20",
     CurrentSeason = 2,
     Raid = EP.ViserioRaid,
     EncounterNames = EP.ViserioEncounterNames,

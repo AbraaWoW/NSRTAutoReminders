@@ -1,5 +1,9 @@
 # Changelog
 
+## v13.0.12 (2026-11-20)
+
+- Data update (WoW Timeline and Viserio) - 2026-11-20 15:28 UTC
+
 ## v13.0.11 (2026-11-14)
 
 - Data update (WoW Timeline and Viserio) - 2026-11-14 20:45 UTC

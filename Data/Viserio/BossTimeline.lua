@@ -37,79 +37,79 @@ EP.ViserioBossTimeline = {
             { t = 175, id = 1304930, dur = 0 },  -- Dark Devastation
             { t = 185, id = 1304045, dur = 6 },  -- Unspeakable Horrors
             { t = 198, id = 1303406, dur = 8 },  -- Abyssal Grasp
+            { t = 200, id = 1305427, dur = 0 },  -- Last Light
+            { t = 201, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 202.06, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 203.01, id = 1304424, dur = 0 },  -- Extinguish
-            { t = 210, id = 1305427, dur = 0 },  -- Last Light
+            { t = 204.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 210.01, id = 1303169, dur = 0 },  -- Divine Radiance
-            { t = 211, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 212.06, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 214.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 220.7, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 222.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 210.7, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 212.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 213.02, id = 1318467, dur = 8 },  -- Negation
+            { t = 219.32, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 220.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 223, id = 1301511, dur = 6 },  -- Voidswarm
-            { t = 223.02, id = 1318467, dur = 8 },  -- Negation
-            { t = 229.32, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 230.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 227.95, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 228.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 228.02, id = 1318467, dur = 8 },  -- Negation
             { t = 230.5, id = 1302333, dur = 24 },  -- Voidweave
             { t = 231.27, id = 1302319, dur = 20 },  -- Digestive Juices
+            { t = 236.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 236.6, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 237.55, id = 1302884, dur = 0 },  -- Venom Roar
-            { t = 237.95, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 238.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 238.02, id = 1318467, dur = 8 },  -- Negation
+            { t = 243.02, id = 1318467, dur = 8 },  -- Negation
             { t = 244, id = 1304930, dur = 0 },  -- Dark Devastation
-            { t = 246.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 246.6, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 253.02, id = 1318467, dur = 8 },  -- Negation
+            { t = 244.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 245.26, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 252.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 253.3, id = 1302884, dur = 0 },  -- Venom Roar
-            { t = 254.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 253.88, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 255.01, id = 1304424, dur = 0 },  -- Extinguish
-            { t = 255.26, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 258.02, id = 1318467, dur = 8 },  -- Negation
+            { t = 260.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 260.2, id = 1302705, dur = 8 },  -- Nightfall
             { t = 261, id = 1304045, dur = 6 },  -- Unspeakable Horrors
-            { t = 262.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 263.88, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 262.55, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 264, id = 1304930, dur = 0 },  -- Dark Devastation
-            { t = 268.02, id = 1318467, dur = 8 },  -- Negation
-            { t = 270.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 272.55, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 268.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 271.19, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 273.02, id = 1318467, dur = 8 },  -- Negation
             { t = 275, id = 1302951, dur = 44 },  -- Suffocating Darkness
-            { t = 278.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 276.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 279.83, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 280.01, id = 1303406, dur = 8 },  -- Abyssal Grasp
-            { t = 281.19, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 283.02, id = 1318467, dur = 8 },  -- Negation
             { t = 284, id = 1304930, dur = 0 },  -- Dark Devastation
-            { t = 286.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 289.83, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 284.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 288.02, id = 1318467, dur = 8 },  -- Negation
+            { t = 288.47, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 292.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 294, id = 1304045, dur = 6 },  -- Unspeakable Horrors
-            { t = 294.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 298.02, id = 1318467, dur = 8 },  -- Negation
-            { t = 298.47, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 302.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 297.11, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 300.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 303.02, id = 1318467, dur = 8 },  -- Negation
+            { t = 305.75, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 307, id = 1303406, dur = 8 },  -- Abyssal Grasp
-            { t = 307.11, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 310.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 308.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 312.01, id = 1304424, dur = 0 },  -- Extinguish
-            { t = 313.02, id = 1318467, dur = 8 },  -- Negation
-            { t = 315.75, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 318.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 314.39, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 316.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 318.02, id = 1318467, dur = 8 },  -- Negation
             { t = 319.01, id = 1303169, dur = 0 },  -- Divine Radiance
-            { t = 324.39, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 326.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 328.02, id = 1318467, dur = 8 },  -- Negation
+            { t = 323.03, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 324.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 331.67, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 332, id = 1301511, dur = 6 },  -- Voidswarm
-            { t = 333.03, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 334.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 332.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 333.02, id = 1318467, dur = 8 },  -- Negation
             { t = 339.5, id = 1302333, dur = 24 },  -- Voidweave
+            { t = 340.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 340.27, id = 1302319, dur = 20 },  -- Digestive Juices
-            { t = 341.67, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 342.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 343.02, id = 1318467, dur = 8 },  -- Negation
+            { t = 340.31, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 346.55, id = 1302884, dur = 0 },  -- Venom Roar
-            { t = 350.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 350.31, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 348.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 348.02, id = 1318467, dur = 8 },  -- Negation
+            { t = 348.95, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 353, id = 1304930, dur = 0 },  -- Dark Devastation
-            { t = 358.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 358.02, id = 1318467, dur = 8 },  -- Negation
-            { t = 358.95, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 362.3, id = 1302884, dur = 0 },  -- Venom Roar
             { t = 364.01, id = 1304424, dur = 0 },  -- Extinguish
             { t = 369.2, id = 1302705, dur = 8 },  -- Nightfall
@@ -168,87 +168,87 @@ EP.ViserioBossTimeline = {
             { t = 237.55, id = 1302884, dur = 0 },  -- Venom Roar
             { t = 241, id = 1304930, dur = 0 },  -- Dark Devastation
             { t = 253.3, id = 1302884, dur = 0 },  -- Venom Roar
+            { t = 255, id = 1305427, dur = 0 },  -- Last Light
             { t = 255.01, id = 1304424, dur = 0 },  -- Extinguish
+            { t = 256, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 257.06, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 259.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 260.2, id = 1302705, dur = 8 },  -- Nightfall
             { t = 261, id = 1304045, dur = 6 },  -- Unspeakable Horrors
             { t = 261, id = 1304930, dur = 0 },  -- Dark Devastation
+            { t = 265.7, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 267.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 268.02, id = 1318467, dur = 12 },  -- Negation
             { t = 269.8, id = 1302884, dur = 0 },  -- Venom Roar
+            { t = 274.32, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 275, id = 1302951, dur = 44 },  -- Suffocating Darkness
+            { t = 275.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 280.01, id = 1303406, dur = 8 },  -- Abyssal Grasp
+            { t = 282.95, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 283.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 283.02, id = 1318467, dur = 12 },  -- Negation
             { t = 284, id = 1304930, dur = 0 },  -- Dark Devastation
             { t = 286.1, id = 1302884, dur = 0 },  -- Venom Roar
+            { t = 291.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 291.6, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 297.01, id = 1304424, dur = 0 },  -- Extinguish
-            { t = 300, id = 1305427, dur = 0 },  -- Last Light
-            { t = 301, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 302.06, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 304.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 298.02, id = 1318467, dur = 12 },  -- Negation
+            { t = 299.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 300.26, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 307, id = 1303406, dur = 8 },  -- Abyssal Grasp
+            { t = 307.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 308, id = 1304045, dur = 6 },  -- Unspeakable Horrors
-            { t = 310.7, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 312.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 308.88, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 313.02, id = 1318467, dur = 12 },  -- Negation
+            { t = 315.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 317.55, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 319.01, id = 1303169, dur = 0 },  -- Divine Radiance
-            { t = 319.32, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 320.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 327.95, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 328.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 323.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 326.19, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 328.02, id = 1318467, dur = 12 },  -- Negation
+            { t = 331.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 332, id = 1301511, dur = 6 },  -- Voidswarm
-            { t = 336.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 336.6, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 334.83, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 339.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 339.5, id = 1302333, dur = 24 },  -- Voidweave
             { t = 340.27, id = 1302319, dur = 20 },  -- Digestive Juices
             { t = 343.02, id = 1318467, dur = 12 },  -- Negation
-            { t = 344.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 345.26, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 343.47, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 346.55, id = 1302884, dur = 0 },  -- Venom Roar
+            { t = 347.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 350, id = 1304930, dur = 0 },  -- Dark Devastation
-            { t = 352.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 353.88, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 352.11, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 355.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 358.02, id = 1318467, dur = 12 },  -- Negation
-            { t = 360.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 360.75, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 362.3, id = 1302884, dur = 0 },  -- Venom Roar
-            { t = 362.55, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 363.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 364.01, id = 1304424, dur = 0 },  -- Extinguish
-            { t = 368.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 369.2, id = 1302705, dur = 8 },  -- Nightfall
+            { t = 369.39, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 370, id = 1304045, dur = 6 },  -- Unspeakable Horrors
             { t = 370, id = 1304930, dur = 0 },  -- Dark Devastation
-            { t = 371.19, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 371.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 373.02, id = 1318467, dur = 12 },  -- Negation
-            { t = 376.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 378.03, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 378.8, id = 1302884, dur = 0 },  -- Venom Roar
-            { t = 379.83, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 379.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 384, id = 1302951, dur = 44 },  -- Suffocating Darkness
-            { t = 384.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 386.67, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 387.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 388.02, id = 1318467, dur = 12 },  -- Negation
-            { t = 388.47, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 389.01, id = 1303406, dur = 8 },  -- Abyssal Grasp
-            { t = 392.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 393, id = 1304930, dur = 0 },  -- Dark Devastation
+            { t = 395.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 395.1, id = 1302884, dur = 0 },  -- Venom Roar
-            { t = 397.11, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 400.01, id = 1308873, dur = 5 },  -- Null Gate
+            { t = 395.31, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 403.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 403.02, id = 1318467, dur = 12 },  -- Negation
-            { t = 405.75, id = 1301479, dur = 0 },  -- Eightfold Eclipse
+            { t = 403.95, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 406.01, id = 1304424, dur = 0 },  -- Extinguish
-            { t = 408.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 414.39, id = 1301479, dur = 0 },  -- Eightfold Eclipse
             { t = 416, id = 1303406, dur = 8 },  -- Abyssal Grasp
-            { t = 416.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 417, id = 1304045, dur = 6 },  -- Unspeakable Horrors
-            { t = 418.02, id = 1318467, dur = 12 },  -- Negation
-            { t = 423.03, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 424.01, id = 1308873, dur = 5 },  -- Null Gate
             { t = 428.01, id = 1303169, dur = 0 },  -- Divine Radiance
-            { t = 431.67, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 432.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 433.02, id = 1318467, dur = 12 },  -- Negation
-            { t = 440.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 440.31, id = 1301479, dur = 0 },  -- Eightfold Eclipse
-            { t = 448.01, id = 1308873, dur = 5 },  -- Null Gate
-            { t = 448.02, id = 1318467, dur = 12 },  -- Negation
-            { t = 448.95, id = 1301479, dur = 0 },  -- Eightfold Eclipse
         },
     },
     [3470] = {
@@ -1722,13 +1722,13 @@ EP.ViserioBossTimeline = {
             { t = 135.51, id = 1286860, dur = 20 },  -- Rage of the Shackled
             { t = 135.52, id = 1299526, dur = 20 },  -- Venomous Heart
             { t = 190.43, id = 1301117, dur = 4 },  -- Grasping Fangs
-            { t = 193.99, id = 1311609, dur = 6 },  -- Blight Vein
-            { t = 197.9, id = 1311609, dur = 6 },  -- Blight Vein
+            { t = 193.99, id = 1311609, dur = 4 },  -- Blight Vein
+            { t = 197.9, id = 1311609, dur = 4 },  -- Blight Vein
             { t = 198.71, id = 1290990, dur = 0 },  -- Writhing Gestation
-            { t = 201.81, id = 1311609, dur = 6 },  -- Blight Vein
-            { t = 205.73, id = 1311609, dur = 6 },  -- Blight Vein
-            { t = 209.64, id = 1311609, dur = 6 },  -- Blight Vein
-            { t = 213.55, id = 1311609, dur = 6 },  -- Blight Vein
+            { t = 201.81, id = 1311609, dur = 4 },  -- Blight Vein
+            { t = 205.73, id = 1311609, dur = 4 },  -- Blight Vein
+            { t = 209.64, id = 1311609, dur = 4 },  -- Blight Vein
+            { t = 213.55, id = 1311609, dur = 4 },  -- Blight Vein
             { t = 220, id = 1295360, dur = 10 },  -- Malignant Shell
             { t = 284.57, id = 1286860, dur = 20 },  -- Rage of the Shackled
             { t = 284.57, id = 1299526, dur = 20 },  -- Venomous Heart
@@ -1808,8 +1808,8 @@ EP.ViserioBossTimeline = {
             { t = 184.32, id = 1290990, dur = 0 },  -- Writhing Gestation
             { t = 197.52, id = 1301117, dur = 4 },  -- Grasping Fangs
             { t = 198.73, id = 1301117, dur = 4 },  -- Grasping Fangs
-            { t = 206, id = 1311609, dur = 6 },  -- Blight Vein
-            { t = 213, id = 1311609, dur = 6 },  -- Blight Vein
+            { t = 206, id = 1311609, dur = 4 },  -- Blight Vein
+            { t = 213, id = 1311609, dur = 4 },  -- Blight Vein
             { t = 252.43, id = 1290990, dur = 0 },  -- Writhing Gestation
             { t = 294.56, id = 1286860, dur = 20 },  -- Rage of the Shackled
             { t = 294.57, id = 1299526, dur = 20 },  -- Venomous Heart

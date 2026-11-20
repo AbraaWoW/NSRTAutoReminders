@@ -2,7 +2,7 @@ local ADDON_NAME, EP = ...
 EP.RegisterSource({
     id = "wowtimeline",
     label = "WoW Timeline (Top Logs)",
-    GeneratedAt = "2026-11-14",
+    GeneratedAt = "2026-11-20",
     CurrentSeason = 2,
     Raid = EP.WowTimelineRaid,
     EncounterNames = EP.WowTimelineEncounterNames,
