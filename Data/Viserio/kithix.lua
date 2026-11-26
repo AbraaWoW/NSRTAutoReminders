@@ -391,62 +391,6 @@ EP.ViserioFullNotes[3513] = {
         },
     },
     {
-        name = "Kith'ix Mythic (Template)",
-        author = "Neitera",
-        difficulty = "Mythic",
-        duration = 325,
-        phaseStarts = { [1] = 0, [2] = 255 },
-        composition = { 105, 257, 264, 270, 1468 },
-        specs = {
-            [105] = {
-                {
-                    { time = 16, ph = 1, spellid = 391528 },
-                    { time = 78, ph = 1, spellid = 391528 },
-                    { time = 124, ph = 1, spellid = 740 },
-                    { time = 139, ph = 1, spellid = 391528 },
-                    { time = 201, ph = 1, spellid = 391528 },
-                    { time = 263, ph = 1, spellid = 391528 },
-                    { time = 306, ph = 1, spellid = 740 },
-                    { time = 325, ph = 1, spellid = 391528 },
-                },
-            },
-            [257] = {
-                {
-                    { time = 0, ph = 1, spellid = 200183 },
-                    { time = 84, ph = 1, spellid = 64843 },
-                    { time = 123, ph = 1, spellid = 200183 },
-                    { time = 233, ph = 1, spellid = 64843 },
-                    { time = 260, ph = 1, spellid = 200183 },
-                },
-            },
-            [264] = {
-                {
-                    { time = 13, ph = 1, spellid = 98008 },
-                    { time = 18, ph = 1, spellid = 114052 },
-                    { time = 198, ph = 1, spellid = 98008 },
-                    { time = 229, ph = 1, spellid = 114052 },
-                },
-            },
-            [270] = {
-                {
-                    { time = 2, ph = 1, spellid = 322118 },
-                    { time = 40, ph = 1, spellid = 115310 },
-                    { time = 125, ph = 1, spellid = 322118 },
-                    { time = 234, ph = 1, spellid = 115310 },
-                    { time = 249, ph = 1, spellid = 322118 },
-                },
-            },
-            [1468] = {
-                {
-                    { time = 20, ph = 1, spellid = 370537 },
-                    { time = 124, ph = 1, spellid = 363534 },
-                    { time = 127, ph = 1, spellid = 370537 },
-                    { time = 233, ph = 1, spellid = 370537 },
-                },
-            },
-        },
-    },
-    {
         name = "Kith'ix Mythic Team Merrow CDs",
         author = "remy",
         difficulty = "Mythic",
@@ -510,6 +454,62 @@ EP.ViserioFullNotes[3513] = {
                     { time = 255, ph = 1, spellid = 370564 },
                     { time = 266, ph = 1, spellid = 370537 },
                     { time = 283, ph = 1, spellid = 363534 },
+                },
+            },
+        },
+    },
+    {
+        name = "Kith'ix Mythic (Template)",
+        author = "Neitera",
+        difficulty = "Mythic",
+        duration = 325,
+        phaseStarts = { [1] = 0, [2] = 255 },
+        composition = { 105, 257, 264, 270, 1468 },
+        specs = {
+            [105] = {
+                {
+                    { time = 16, ph = 1, spellid = 391528 },
+                    { time = 78, ph = 1, spellid = 391528 },
+                    { time = 124, ph = 1, spellid = 740 },
+                    { time = 139, ph = 1, spellid = 391528 },
+                    { time = 201, ph = 1, spellid = 391528 },
+                    { time = 263, ph = 1, spellid = 391528 },
+                    { time = 306, ph = 1, spellid = 740 },
+                    { time = 325, ph = 1, spellid = 391528 },
+                },
+            },
+            [257] = {
+                {
+                    { time = 0, ph = 1, spellid = 200183 },
+                    { time = 84, ph = 1, spellid = 64843 },
+                    { time = 123, ph = 1, spellid = 200183 },
+                    { time = 233, ph = 1, spellid = 64843 },
+                    { time = 260, ph = 1, spellid = 200183 },
+                },
+            },
+            [264] = {
+                {
+                    { time = 13, ph = 1, spellid = 98008 },
+                    { time = 18, ph = 1, spellid = 114052 },
+                    { time = 198, ph = 1, spellid = 98008 },
+                    { time = 229, ph = 1, spellid = 114052 },
+                },
+            },
+            [270] = {
+                {
+                    { time = 2, ph = 1, spellid = 322118 },
+                    { time = 40, ph = 1, spellid = 115310 },
+                    { time = 125, ph = 1, spellid = 322118 },
+                    { time = 234, ph = 1, spellid = 115310 },
+                    { time = 249, ph = 1, spellid = 322118 },
+                },
+            },
+            [1468] = {
+                {
+                    { time = 20, ph = 1, spellid = 370537 },
+                    { time = 124, ph = 1, spellid = 363534 },
+                    { time = 127, ph = 1, spellid = 370537 },
+                    { time = 233, ph = 1, spellid = 370537 },
                 },
             },
         },
